@@ -1,6 +1,7 @@
 # helps load the analytics file from a csv
 
 import csv
+from match import Match
 
 class TournamentLoader:
 
