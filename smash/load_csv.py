@@ -1,7 +1,8 @@
 # helps load the analytics file from a csv
 
 import csv
-from match import Match
+from game import Game
+from utility import is_empty_row
 
 class TournamentLoader:
 
@@ -9,14 +10,6 @@ class TournamentLoader:
         print("loading from %s" % filename)
         self.filename = filename
         self.games = []
-
-    @staticmethod
-    def is_empty_row(row):
-        any_empty = False
-        for i in row:
-            any_empty = any_empty or i
-
-        return not any_empty
 
     def run(self):
 
@@ -34,7 +27,7 @@ class TournamentLoader:
             if row[0].strip().lower() == 'game:':
                 start_game = idx
            
-            if self.is_empty_row(row) and self.is_empty_row(last_row) and self.is_empty_row(last_two_row):
+            if is_empty_row(row) and is_empty_row(last_row) and is_empty_row(last_two_row):
                 print("end of a game")
                 end_game = idx - 2
                 game_indexes.append([start_game, end_game])
@@ -44,14 +37,13 @@ class TournamentLoader:
             last_two_row = last_row 
             last_row = row
 
-        print(game_indexes)
         
         # now that we have the start/end indexes of each game, now we can process them individually
         for index in game_indexes:
-            print(len(list(csv_array)[index[0]:index[1]]))
+            
+            game = Game("some tourney")
+            game.load_from_list(csv_array[index[0]:index[1]])
 
-            print("start row: %s" % csv_array[index[0]])
-            print("end row: %s" % csv_array[index[1]])
 
 loader = TournamentLoader('smash_summit_3.csv')
 loader.run()
