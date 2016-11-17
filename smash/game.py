@@ -3,11 +3,14 @@ from utility import is_empty_row
 
 
 class Match:
+
     def __init__(self) -> None:
         return
 
     def load_from_list(self, match: List[List[str]]) -> None:
         print("loading a match")
+        for row in match:
+            print(row)
 
 
 class Game:
@@ -43,5 +46,7 @@ class Game:
         #   and pair with the last start
         match_indexes.append([start_index, len(game)-1])
 
-        print(self.players)
-        print(match_indexes)
+        for match_index in match_indexes:
+            match = Match()  # type: Match
+            match.load_from_list(game[match_index[0]:match_index[1]])
+
