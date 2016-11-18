@@ -3,6 +3,9 @@ from utility import is_empty_row
 
 
 class Match:
+    # this class represents a MATCH, a subset of a game, that might be
+    #   one of 3, 5, or 7. It has players, a stage, players, and the 
+    #   events that transpired
 
     def __init__(self) -> None:
         return
@@ -32,9 +35,13 @@ class Game:
         last_row = ['dummy']  # type: List[str]
         match_indexes = []  # type: List[List[int]]
         start_index = 0  # type: int
+        copy_array = []  # type: List[str]
         for idx, row in enumerate(game[3:]):
 
+            print("idx: %s  | %s" % (idx, row))
+
             if 'match' in row[0].strip().lower():
+                print("found starting index: %s" % idx)
                 start_index = idx
 
             if is_empty_row(row) and is_empty_row(last_row):
@@ -44,9 +51,13 @@ class Game:
 
         # we need to grab the last match, so just take the end of the list
         #   and pair with the last start
-        match_indexes.append([start_index, len(game)-1])
+        match_indexes.append([start_index, len(game)])
 
+        # now that we have all matches, pass each index pair to be loaded
         for match_index in match_indexes:
+#            print(match_index)
             match = Match()  # type: Match
-            match.load_from_list(game[match_index[0]:match_index[1]])
-
+#            match.load_from_list(game[match_index[0]:match_index[1]])
+#
+        for i in game[match_indexes[0][0]:match_indexes[0][1]]:
+            print(i)

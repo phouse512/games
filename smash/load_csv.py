@@ -39,7 +39,7 @@ class TournamentLoader:
             last_row = row
             counter += 1
 
-        game_indexes.append([start_game, counter-1])
+        game_indexes.append([start_game, counter])
         
         # now that we have the start/end indexes of each game, now we can process them individually
         for index in game_indexes:
