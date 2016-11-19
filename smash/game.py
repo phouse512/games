@@ -93,3 +93,5 @@ class Game:
         for match_index in match_indexes:
             match = Match()  # type: Match
             match.load_from_list(just_match_array[match_index[0]:match_index[1]])
+            self.matches.append(match)
+

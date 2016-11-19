@@ -29,7 +29,6 @@ class TournamentLoader:
                 start_game = idx
            
             if is_empty_row(row) and is_empty_row(last_row) and is_empty_row(last_two_row):
-                print("end of a game")
                 end_game = idx - 2
                 game_indexes.append([start_game, end_game])
 
