@@ -8,13 +8,35 @@ class Match:
     #   events that transpired
 
     def __init__(self) -> None:
+        self.players = []  # type: List[Dict[str, str]]
         return
 
     def load_from_list(self, match: List[List[str]]) -> None:
         print("loading a match")
-        for row in match:
-            print(row)
+        
+        self.match_name = match[0][0]  # type: str
+        self.video_source = match[0][1]  # type: str
+        self.video_start_time = match[0][2]  # type: str
 
+        player_loop = True  # type: bool
+        loop_index = 1  # type: int
+        while player_loop:
+            if is_empty_row(match[loop_index]):
+                player_loop = False
+                continue
+
+            self.players.append({ 'player': match[loop_index][0], 'character': match[loop_index][1] })
+            loop_index += 1
+
+
+        # next, time to get the stage
+        
+
+
+        # next, load each event
+
+        print(self.players)
+            
 
 class Game:
     # this class represents a GAME, set of matches (usually to best of 5)
@@ -35,13 +57,10 @@ class Game:
         last_row = ['dummy']  # type: List[str]
         match_indexes = []  # type: List[List[int]]
         start_index = 0  # type: int
-        copy_array = []  # type: List[str]
+        just_match_array = game[3:]  # type: List[List[str]]
         for idx, row in enumerate(game[3:]):
 
-            print("idx: %s  | %s" % (idx, row))
-
             if 'match' in row[0].strip().lower():
-                print("found starting index: %s" % idx)
                 start_index = idx
 
             if is_empty_row(row) and is_empty_row(last_row):
@@ -55,9 +74,5 @@ class Game:
 
         # now that we have all matches, pass each index pair to be loaded
         for match_index in match_indexes:
-#            print(match_index)
             match = Match()  # type: Match
-#            match.load_from_list(game[match_index[0]:match_index[1]])
-#
-        for i in game[match_indexes[0][0]:match_indexes[0][1]]:
-            print(i)
+            match.load_from_list(just_match_array[match_index[0]:match_index[1]])
