@@ -2,6 +2,21 @@ from typing import List, Any
 from utility import is_empty_row
 
 
+class Kill:
+    # this class represents a KILL, with a timestamp of who killed who
+    #   with what character, what move, where, etc
+    
+    def __init__(self, kill_row: List[str]) -> None:
+        self.time = kill_row[0]  # type: str
+        self.attacker = kill_row[1]  # type: str
+        self.defender = kill_row[2]  # type: str
+        self.attacker_percent = int(kill_row[3])  # type: int
+        self.defender_percent = int(kill_row[4])  # type: int
+        self.killing_move = kill_row[5]  # type: str
+        self.death_location = kill_row[6]  # type: str
+        self.edge_guard = kill_row[7]  # type: str
+
+
 class Match:
     # this class represents a MATCH, a subset of a game, that might be
     #   one of 3, 5, or 7. It has players, a stage, players, and the 
@@ -12,9 +27,7 @@ class Match:
         return
 
     def load_from_list(self, match: List[List[str]]) -> None:
-        print("loading a match")
-        
-        self.match_name = match[0][0]  # type: str
+        self.match_name = match[0][0].lower() # type: str
         self.video_source = match[0][1]  # type: str
         self.video_start_time = match[0][2]  # type: str
 
@@ -25,17 +38,21 @@ class Match:
                 player_loop = False
                 continue
 
-            self.players.append({ 'player': match[loop_index][0], 'character': match[loop_index][1] })
+            self.players.append({ 'player': match[loop_index][0].lower(), 'character': match[loop_index][1].lower() })
             loop_index += 1
 
 
         # next, time to get the stage
+        loop_index += 1
+        self.stage = match[loop_index][1].lower()
         
-
-
-        # next, load each event
-
-        print(self.players)
+        # bump up the loop index to get to the events
+        loop_index += 4
+        
+        self.kills = []  # type: List[Kill]
+        for row in match[loop_index:]:
+            new_kill = Kill(row)
+            self.kills.append(new_kill)
             
 
 class Game:

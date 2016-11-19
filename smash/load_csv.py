@@ -47,6 +47,8 @@ class TournamentLoader:
             game = Game("some tourney")  # type: Game
             game.load_from_list(csv_array[index[0]:index[1]])
 
+            self.games.append(game)
+
 
 loader = TournamentLoader('smash_summit_3.csv')
 loader.run()
