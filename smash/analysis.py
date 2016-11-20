@@ -4,11 +4,16 @@ from game import Game
 from game import Kill
 from game import Match
 
+from math import floor
+
 from typing import Any
 from typing import Dict
 from typing import List
 
+from utility import time_difference_to_int
+
 getcontext().prec = 6
+
 
 class GameAnalyzer:
     # this class is reponsible for analyzing large sets of games. 
@@ -22,10 +27,52 @@ class GameAnalyzer:
         return {}
 
     def character_matchup_table(self) -> List[List[str]]:
+        match_table = {}  # type: Dict[str, Any]
+
         for game in self.all_games:
             for match in game.matches:
+                for player in match.players:
+                    if player['player'] == 'mew2king':
+                        m2k = player['character']
+                    else:
+                        other = player['character']
 
-                print(match.winner)
+                string_hash = m2k + '-' + other
+                if string_hash not in match_table:
+                    match_table[string_hash] = { 'count': 0, 'win_count': 0, 'match_time': 0 }
+
+                match_table[string_hash]['count'] += 1
+                
+                match_table[string_hash]['match_time'] += time_difference_to_int('8:00', match.kills[len(match.kills)-1].time)
+
+                if match.winner == 'm2k':
+                    match_table[string_hash]['win_count'] += 1
+
+        # perform time avg calculations, and handle formatting back to string format: "mm:ss"
+        for key in match_table:
+            time_avg = Decimal(match_table[key]['match_time']) / Decimal(match_table[key]['count'])
+
+            time_avg_minutes = floor(time_avg / 60)
+            time_avg_seconds = time_avg % 60
+
+            if time_avg_seconds < 10:
+                time_avg_seconds = "0" + str(time_avg_seconds)
+
+            match_table[key]['avg_match_time'] = "%s:%s" % (str(time_avg_minutes), str(time_avg_seconds))
+            del match_table[key]['match_time']
+
+        # turn dict into a list that can be turned into a csv
+        header_row = ['character matchup', 'win-loss record', 'avg time per game']
+        return_list = [header_row]
+
+        for key in match_table:
+            win_count = match_table[key]['win_count']
+            loss_count = match_table[key]['count'] - win_count
+            win_loss_str = str(win_count) + '-' + str(loss_count)
+            temp_row = [key, win_loss_str, match_table[key]['avg_match_time']]
+            return_list.append(temp_row)
+
+        return return_list
 
     def tournament_stats(self) -> Dict[Any, Any]:
         """
