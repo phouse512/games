@@ -1,3 +1,6 @@
+import csv
+
+from typing import Any
 from typing import List
 
 def is_empty_row(row: List[str]) -> bool:
@@ -26,3 +29,16 @@ def time_difference_to_int(start_time: str, end_time: str) -> int:
 
     return (60 * minute_diff + second_diff)
 
+
+def write_multi_array_to_csv(multi_list: List[List[Any]], filename: str) -> None:
+    """ this method takes a 2d list of lists, and writes
+        them to a csv, based on an input filename
+    """
+
+    if not '.csv' == filename[-4:]:
+        filename += ".csv"
+
+    with open(filename, 'w', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
+        for row in multi_list:
+            csvwriter.writerow(row)

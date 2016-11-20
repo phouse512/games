@@ -52,13 +52,15 @@ class GameAnalyzer:
         for key in match_table:
             time_avg = Decimal(match_table[key]['match_time']) / Decimal(match_table[key]['count'])
 
-            time_avg_minutes = floor(time_avg / 60)
-            time_avg_seconds = time_avg % 60
+            time_avg_minutes = floor(float(time_avg) / 60)  # type: float
+            time_avg_seconds = time_avg % 60  # type: Decimal
 
             if time_avg_seconds < 10:
-                time_avg_seconds = "0" + str(time_avg_seconds)
+                time_avg_seconds_string = "0" + str(time_avg_seconds)  # type: str
+            else:
+                time_avg_seconds_string = str(time_avg_seconds)
 
-            match_table[key]['avg_match_time'] = "%s:%s" % (str(time_avg_minutes), str(time_avg_seconds))
+            match_table[key]['avg_match_time'] = "%s:%s" % (str(time_avg_minutes), time_avg_seconds_string)
             del match_table[key]['match_time']
 
         # turn dict into a list that can be turned into a csv
