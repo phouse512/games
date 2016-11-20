@@ -38,6 +38,10 @@ class Match:
                 player_loop = False
                 continue
 
+            # winner data is stored on first line
+            if loop_index == 1:
+                self.winner = match[loop_index][4].lower()
+
             self.players.append({ 'player': match[loop_index][0].lower(), 'character': match[loop_index][1].lower() })
             loop_index += 1
 

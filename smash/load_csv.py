@@ -49,5 +49,3 @@ class TournamentLoader:
             self.games.append(game)
 
 
-loader = TournamentLoader('smash_summit_3.csv')
-loader.run()
