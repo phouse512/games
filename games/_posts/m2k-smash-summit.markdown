@@ -33,3 +33,45 @@ a total of 20 matches. He went 3-2 overall, and went 10-10 in his sets.
 Figure 1 below is a table that represents his individual character vs.
 character set records, as well as the average game time for each matchup.
 
+[figure 1][image here]
+
+As you can see, M2K's best record is as Marth when playing against Fox, but
+this is also when he 3-0'd Leffen in Winner's Quarterfinal. Unfortunately
+here, most of the win-loss records are representative of specific rounds in the
+tournament, versus single players. You can see the Marth-Peach matchup versus
+Armada, the Fox-Jigglypuff from Losers' Finals with Hbox, and the 5-set match
+with S2J (Sheik-Captain Falcon). In time as I catalogue and annotate more
+tournaments, I hope to be able to show large collections of pro character
+matchups.
+
+The one interesting thing to note here is related to the average time per game.
+For the most part, the quick games make sense. Marth-Fox and Marth-Falco are
+both heavy damage hitters and can kill quickly. The sole long game with
+Marth-Peach also makes sense. Surprisingly, the Fox-Jigglypuff matchup was the
+third-fastest, coming in at 3:39.33. From what I've seen, Hbox's Jigglypuff
+matches sometimes take quite a while, but I'm attributing this to M2K pulling
+out Fox, a character he doesn't play as much.
+
+[figure 2][basic kill analysis]
+
+Figure 2 is a breakdown of all of M2K's kills throughout the tournament,
+grouped by each character. Mew2King uses a variety of methods to kill his
+opponents, but there is a clear gap between Marth's best attacks and the other
+methods he uses. The only edgeguards* with his Marth came from his off-stage
+forward air combos. The highest average defender % came from up-throws into
+oblivion, while the lowest non-SD kill came from the forward airs. As a note,
+I am not tracking combos or anything related because of the subjectivity, these
+are just the last-hits.
+
+M2K's Sheik stuck to the basics and used aerials for 92.67% of his kills. His
+Fox had even less variety against Jigglypuff and of the 8 kills, half of them
+were up smashes.
+
+Now that we've got some of the basic overview stats out of the way, let's look
+into some more specific analysis of M2K's play.
+
+
+*here, edgeguards are defined as times when the opponent is close enough to grab the
+stage edge, but the attacking player keeps or rolls up off the edge to keep the
+opponent from grabbing the edge in reach. Edgeguarding in this post does not
+refer to attacking moves used on the edge to damage and push the opponent away.
