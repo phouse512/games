@@ -6,9 +6,11 @@ layout: default
 Welcome to sports analysis
 
 {% for post in site.posts %}
-    <h2> {{post.title}}</h2>
-    <a href="{{ post.url | prepend: site.baseurl }}">Linky</a>
+<h2>{{post.title}}</h2>
+<a href="{{ post.url | prepend: site.baseurl }}">Linky</a>
 {% endfor %}
+
+<a href="#">Test</a>
 
 This is a [link](http://google.com). Something *italics* and something **bold**.
 
