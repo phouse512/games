@@ -1,6 +1,6 @@
-title: Researcher
-url: "http://ankitsultana.me"
-baseurl: "/researcher"
+title: games
+url: "http://games.phizzle.space"
+baseurl: "/"
 
 markdown: kramdown
 
