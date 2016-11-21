@@ -1,6 +1,6 @@
 title: games
 url: "http://games.phizzle.space"
-baseurl: "/"
+baseurl: ""
 
 markdown: kramdown
 
