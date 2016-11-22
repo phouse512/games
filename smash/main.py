@@ -11,7 +11,8 @@ analyzer = GameAnalyzer(loader.games)
 
 #results = analyzer.kill_analysis()
 #results = analyzer.tournament_stats()
-results = analyzer.character_matchup_table()
+#results = analyzer.character_matchup_table()
+results = analyzer.gimp_analysis()
 
 pp = pprint.PrettyPrinter(indent=4)
 pp.pprint(results)

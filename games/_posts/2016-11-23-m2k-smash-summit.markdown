@@ -67,6 +67,8 @@ M2K's Sheik stuck to the basics and used aerials for 92.67% of his kills. His
 Fox had even less variety against Jigglypuff and of the 8 kills, half of them
 were up smashes.
 
+## Specific Stats
+
 Now that we've got some of the basic overview stats out of the way, let's look
 into some more specific analysis of M2K's play.
 

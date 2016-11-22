@@ -26,6 +26,33 @@ class GameAnalyzer:
     def simple_death_analysis(self) -> Dict[Any, Any]:
         return {}
 
+    def gimp_analysis(self) -> Dict[Any, Any]:
+        gimp_kills = {}  # type: Dict[Any, Any] 
+        gimp_kills['victim'] = {}
+        gimp_kills['attacker'] = {}
+        
+        for game in self.all_games:
+            for match in game.matches:
+
+                for player in match.players:
+                    if player['player'] == 'm2k':
+                        m2k_char = player['character']
+                    else:
+                        other_char = player['character']
+
+                for kill in match.kills:
+                    if kill.defender_percent <= 50:
+
+                        if kill.attacker == 'm2k':
+                            gimp_kills['attacker'][m2k_char] = gimp_kills['attacker'].get(m2k_char, 0) + 1
+                        kills = gimp_kills.get(kill.attacker, 0)
+                        gimp_kills[kill.attacker] = kills + 1
+
+        return gimp_kills
+
+
+
+
     def character_matchup_table(self) -> List[List[str]]:
         match_table = {}  # type: Dict[str, Any]
 
