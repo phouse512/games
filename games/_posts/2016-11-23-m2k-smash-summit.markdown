@@ -94,6 +94,7 @@ Next, let's look at how Mew2King performs when he goes down by a stock or more.
 
 ### What's Next
 
+If you've made it this far.
 
 *here, edgeguards are defined as times when the opponent is close enough to grab the
 stage edge, but the attacking player keeps or rolls up off the edge to keep the
