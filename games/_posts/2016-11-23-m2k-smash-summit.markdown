@@ -89,6 +89,18 @@ Final Destination.
 #### Comebacks
 
 Next, let's look at how Mew2King performs when he goes down by a stock or more.
+This was a little bit tougher to analyze and breakdown, simply because the
+stock count at any given time in a match is not a true indicator. Let's say
+a match starts 4-4, and one player kills the other, but not before her
+character takes 85% damage. If you look only at the stock count, it would look
+like she has the lead but you miss out on all the work the second player did
+to bring her percent up to 85%. There are also other intangibles such as momentum
+that can't be tracked with the statistics I've gathered. 
+
+For the purpose of this analysis, we'll look at occurrences when the stock
+count goes to 4-3, 3-2, 2-1 and the other player has less than 50%. This
+analysis also does not include the inverse, when Mew2King goes up by a stock
+against his opponent.
 
 
 

@@ -26,6 +26,44 @@ class GameAnalyzer:
     def simple_death_analysis(self) -> Dict[Any, Any]:
         return {}
 
+    def comeback_analysis(self, player_name: str) -> Dict[Any, Any]:
+        DEFAULT_STOCK = 4  # type: int
+        comeback_counts = {}
+
+        for game in self.all_games:
+            for match in game.matches:
+                stock_count = {}
+                for player in match.players:
+                    if player['player'] != 'mew2king':
+                        other_player = player['player']
+
+                stock_count[player_name] = DEFAULT_STOCK
+                stock_count[other_player] = DEFAULT_STOCK
+
+                for kill in match.kills:
+                    
+                    # we need to compare stock counts to each other
+                    if stock_count[other_player] > 1 and stock_count[other_player] == stock_count[player_name]:
+                        print("found a 2-2, 3-3, 4-4 situation:  %s-%s" % (stock_count[other_player], stock_count[player_name]))
+
+                        # now that it's even (before subtracting this kill), see if the player (m2k) is going down
+                        if kill.defender == player_name and kill.attacker_percent < 50:
+
+                            comeback_key = "%s-%s" % (game.game_name, match.match_name)
+                            
+                            if comeback_key not in comeback_counts:
+                                comeback_counts[comeback_key] = { }
+                            
+                            comeback_counts[comeback_key]['winner'] = match.winner
+                            stock_key = "%s-%s" % (stock_count[other_player], stock_count[player_name])
+                            comeback_counts[comeback_key][stock_key] = 1
+                    
+                    # adjust stock count for latest kill
+                    stock_count[kill.defender] = stock_count[kill.defender]-1
+                
+
+        return comeback_counts
+
     def gimp_analysis(self) -> Dict[Any, Any]:
         gimp_kills = {}  # type: Dict[Any, Any] 
         gimp_kills['victim'] = {}
