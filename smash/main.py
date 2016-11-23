@@ -17,4 +17,4 @@ results = analyzer.gimp_analysis()
 pp = pprint.PrettyPrinter(indent=4)
 pp.pprint(results)
 
-write_multi_array_to_csv(results, 'm2k_character_matchups')
+# write_multi_array_to_csv(results, 'm2k_character_matchups')

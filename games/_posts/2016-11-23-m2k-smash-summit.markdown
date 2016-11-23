@@ -25,7 +25,7 @@ percentage, what part of the stage did they die on (left, top, right), the move
 used, and a couple others. I also recorded the timestamp for each death for
 further analysis.
 
-#### Overview
+### Overview
 
 Before we get into some of the smaller details, let's go through some of the
 high level stats from the tournament. In total, M2K played in 5 rounds, for
@@ -67,10 +67,32 @@ M2K's Sheik stuck to the basics and used aerials for 92.67% of his kills. His
 Fox had even less variety against Jigglypuff and of the 8 kills, half of them
 were up smashes.
 
-## Specific Stats
+### Specific Stats
 
 Now that we've got some of the basic overview stats out of the way, let's look
 into some more specific analysis of M2K's play.
+
+#### Gimp Kills
+
+One of the first things I wanted to check was the number of times that M2K was
+gimped and the number of times he gimped others. The criteria for a gimp kill
+here is not too specific, the player getting killed must have less than
+50 percent damage at the time of death. In total, M2K's Marth got 3 gimps in
+the tournament, 2 of them with his forward airs, and one with a forward tilt.
+Surprisingly here, none of them came from down air punishes.
+
+He got gimped 3 times as well, one of them coming from a shine spike and
+another one from an early rest from Hbox. The lowest percentage M2K died at was
+15 percent, when he got hit by a forward air from Jigglypuff near the bottom of
+Final Destination.
+
+#### Comebacks
+
+Next, let's look at how Mew2King performs when he goes down by a stock or more.
+
+
+
+### What's Next
 
 
 *here, edgeguards are defined as times when the opponent is close enough to grab the

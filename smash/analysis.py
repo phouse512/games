@@ -33,9 +33,11 @@ class GameAnalyzer:
         
         for game in self.all_games:
             for match in game.matches:
-
+                
+                m2k_char = ""  # type: str
+                other_char = ""  # type: str
                 for player in match.players:
-                    if player['player'] == 'm2k':
+                    if player['player'] == 'mew2king':
                         m2k_char = player['character']
                     else:
                         other_char = player['character']
@@ -44,9 +46,12 @@ class GameAnalyzer:
                     if kill.defender_percent <= 50:
 
                         if kill.attacker == 'm2k':
-                            gimp_kills['attacker'][m2k_char] = gimp_kills['attacker'].get(m2k_char, 0) + 1
-                        kills = gimp_kills.get(kill.attacker, 0)
-                        gimp_kills[kill.attacker] = kills + 1
+                            key = m2k_char + '-' + kill.killing_move
+                            gimp_kills['attacker'][key] = gimp_kills['attacker'].get(key, 0) + 1
+                        else:
+                            key = other_char + '-' + kill.killing_move
+                            gimp_kills['victim'][key] = gimp_kills['victim'].get(key, 0) + 1
+
 
         return gimp_kills
 
