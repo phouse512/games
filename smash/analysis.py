@@ -26,6 +26,46 @@ class GameAnalyzer:
     def simple_death_analysis(self) -> Dict[Any, Any]:
         return {}
 
+    def damage_per_min_analysis(self) -> Dict[Any, Any]:
+        damage_dealt = {}  # type: Dict[Any, Any]
+        for game in self.all_games:
+            for match in game.matches:
+                player_map = {}                
+                for player in match.players:
+                    if player['player'] == 'mew2king' and 'm2k' not in damage_dealt:
+                        print("enter only once")
+                        damage_dealt['m2k'] = {}
+                    elif player['player'] not in damage_dealt and player['player'] != 'mew2king':
+                        damage_dealt[player['player']] = { }
+                   
+                    if player['player'] == 'mew2king':
+                        key = 'm2k'
+                    else:
+                        key = player['player']
+
+                    player_map[key] = player['character']
+                    if player_map[key] not in damage_dealt[key]:
+                        damage_dealt[key][player_map[key]] = { 'count': 0, 'match_time': 0 }
+
+                    damage_dealt[key][player_map[key]]['match_time'] += time_difference_to_int('8:00', match.kills[len(match.kills)-1].time) 
+                print(player_map)
+                print(damage_dealt)
+                for idx, kill in enumerate(match.kills):
+                    print(player_map[kill.attacker])
+                    damage_dealt[kill.attacker][player_map[kill.attacker]]['count'] += kill.defender_percent
+
+                    if idx == len(match.kills) -1:
+                        damage_dealt[kill.defender][player_map[kill.defender]]['count'] += kill.attacker_percent
+
+        for key in damage_dealt:
+            for char_key in damage_dealt[key]:
+                match_time_minutes = Decimal(damage_dealt[key][char_key]['match_time']) / 60  # type: Decimal
+                dmg_per_min = Decimal(damage_dealt[key][char_key]['count']) / match_time_minutes
+                damage_dealt[key][char_key]['dpm'] = dmg_per_min
+
+        return damage_dealt
+
+
     def comeback_analysis(self, player_name: str) -> Dict[Any, Any]:
         DEFAULT_STOCK = 4  # type: int
         comeback_counts = {}
@@ -60,7 +100,6 @@ class GameAnalyzer:
                     
                     # adjust stock count for latest kill
                     stock_count[kill.defender] = stock_count[kill.defender]-1
-                
 
         return comeback_counts
 
@@ -90,10 +129,7 @@ class GameAnalyzer:
                             key = other_char + '-' + kill.killing_move
                             gimp_kills['victim'][key] = gimp_kills['victim'].get(key, 0) + 1
 
-
         return gimp_kills
-
-
 
 
     def character_matchup_table(self) -> List[List[str]]:

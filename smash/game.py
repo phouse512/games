@@ -8,8 +8,8 @@ class Kill:
     
     def __init__(self, kill_row: List[str]) -> None:
         self.time = kill_row[0]  # type: str
-        self.attacker = kill_row[1]  # type: str
-        self.defender = kill_row[2]  # type: str
+        self.attacker = kill_row[1].strip().lower()  # type: str
+        self.defender = kill_row[2].strip().lower()  # type: str
         self.attacker_percent = int(kill_row[3])  # type: int
         self.defender_percent = int(kill_row[4])  # type: int
         self.killing_move = kill_row[5]  # type: str
@@ -42,7 +42,7 @@ class Match:
             if loop_index == 1:
                 self.winner = match[loop_index][4].lower()
 
-            self.players.append({ 'player': match[loop_index][0].lower(), 'character': match[loop_index][1].lower() })
+            self.players.append({ 'player': match[loop_index][0].strip().lower(), 'character': match[loop_index][1].lower() })
             loop_index += 1
 
 

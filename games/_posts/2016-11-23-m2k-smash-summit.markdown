@@ -115,9 +115,39 @@ In both of those sets where he went down by a stock multiple times, his win
 percentage was 50%, so nothing indicative. As I collect more data, I'm curious
 to find out whether or not that number will change.
 
+#### Damage Per Minute
+
+The next stat I began to look into was damage per minute. My guess is that this
+speaks more about the character matchup than the person playing it with limited
+stats such as these. In the long term, I hope to establish some benchmarks on
+the average damage dealt per character per minute, but for now there's not much
+else to do with this data.
+
+[dpm chart]
+
 ### What's Next
 
-If you've made it this far.
+If you've made it this far, I hope the numbers and charts presented have been
+interesting and piqued your curiousity. There's a bunch more ideas for stats
+that I would've liked to calculate if I had the time. Ideas such as
+streakiness, clutch factors, efficiency ratings and more have been going
+through my head, but I decided to get this out the door sooner for feedback.
+
+In the near future, I'm going to keep working on annotating as many games as
+I can from upcoming tournaments. If you want to help out at all, let me know
+and maybe we can figure out a way to divide up the work to get stats more
+quickly and reliably!
+
+My background is in programming, so I've been analyzing these datasets using
+Python and csv's to manage most of it. I'm sure there are others that might
+have some pretty neat ideas for how to manipulate the data, so building an API
+to make all of it available is definitely something on my mind as well. Of the
+stats I've covered here, all of these analyses are generalized and coded up so
+it shouldn't take long to publish more posts and reports.
+
+For my next in-depth post, I'll probably try to cover another player, maybe
+Mang0 at the next big tournament. If you have any more ideas or feedback,
+please send them my way so I can make that one even better.
 
 ***
 
