@@ -115,9 +115,6 @@ even stock. If the first time he went down by a stock was at a count of 3-3 or
 
 If you've made it this far.
 
-[^1]: here, edgeguards are defined as times when the opponent is close enough to grab the
-stage edge, but the attacking player keeps or rolls up off the edge to keep the
-opponent from grabbing the edge in reach. Edgeguarding in this post does not
-refer to attacking moves used on the edge to damage and push the opponent away.
+[^1]: here, edgeguards are defined as times when the opponent is close enough to grab the stage edge, but the attacking player keeps or rolls up off the edge to keep the opponent from grabbing the edge in reach. Edgeguarding in this post does not refer to attacking moves used on the edge to damage and push the opponent away.
 
 [^2]: first time as in blah
