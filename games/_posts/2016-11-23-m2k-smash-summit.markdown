@@ -57,7 +57,7 @@ out Fox, a character he doesn't play as much.
 Figure 2 is a breakdown of all of M2K's kills throughout the tournament,
 grouped by each character. Mew2King uses a variety of methods to kill his
 opponents, but there is a clear gap between Marth's best attacks and the other
-methods he uses. The only edgeguards* with his Marth came from his off-stage
+methods he uses. The only edgeguards[^1] with his Marth came from his off-stage
 forward air combos. The highest average defender % came from up-throws into
 oblivion, while the lowest non-SD kill came from the forward airs. As a note,
 I am not tracking combos or anything related because of the subjectivity, these
@@ -102,13 +102,22 @@ count goes to 4-3, 3-2, 2-1 and the other player has less than 50%. This
 analysis also does not include the inverse, when Mew2King goes up by a stock
 against his opponent.
 
-
+In this tournament, there were 11 total situations where M2K went down
+by 1 stock and his opponent had less than 50%. These 11 moments happened across
+7 total sets, so in 2 sets, M2K went down 4-3, tied it, then went down 3-2,
+and tied it one more time at 2-2 before going down 2-1. Of these 7 matches, his
+win percentage is 28.57%, which is not too surprising. For those two times that
+he was able to pull off the win, the first time[^2] he went down by a stock was on the 4-4
+even stock. If the first time he went down by a stock was at a count of 3-3 or
+2-2, Mew2King was not able to comeback and pull out the win.
 
 ### What's Next
 
 If you've made it this far.
 
-*here, edgeguards are defined as times when the opponent is close enough to grab the
+[^1]: here, edgeguards are defined as times when the opponent is close enough to grab the
 stage edge, but the attacking player keeps or rolls up off the edge to keep the
 opponent from grabbing the edge in reach. Edgeguarding in this post does not
 refer to attacking moves used on the edge to damage and push the opponent away.
+
+[^2]: first time as in blah
