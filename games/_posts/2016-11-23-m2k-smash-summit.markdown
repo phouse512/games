@@ -106,10 +106,14 @@ In this tournament, there were 11 total situations where M2K went down
 by 1 stock and his opponent had less than 50%. These 11 moments happened across
 7 total sets, so in 2 sets, M2K went down 4-3, tied it, then went down 3-2,
 and tied it one more time at 2-2 before going down 2-1. Of these 7 matches, his
-win percentage is 28.57%, which is not too surprising. For those two times that
+win percentage is *28.57%*, which is not too surprising. For those two times that
 he was able to pull off the win, the first time[^2] he went down by a stock was on the 4-4
 even stock. If the first time he went down by a stock was at a count of 3-3 or
-2-2, Mew2King was not able to comeback and pull out the win.
+2-2, Mew2King was *not* able to comeback and pull out the win.
+
+In both of those sets where he went down by a stock multiple times, his win
+percentage was 50%, so nothing indicative. As I collect more data, I'm curious
+to find out whether or not that number will change.
 
 ### What's Next
 
