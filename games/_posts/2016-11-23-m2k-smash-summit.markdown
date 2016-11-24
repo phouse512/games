@@ -106,10 +106,10 @@ In this tournament, there were 11 total situations where M2K went down
 by 1 stock and his opponent had less than 50%. These 11 moments happened across
 7 total sets, so in 2 sets, M2K went down 4-3, tied it, then went down 3-2,
 and tied it one more time at 2-2 before going down 2-1. Of these 7 matches, his
-win percentage is _28.57%_, which is not too surprising. For those two times that
+win percentage is __28.57%__, which is not too surprising. For those two times that
 he was able to pull off the win, the first time[^2] he went down by a stock was on the 4-4
-even stock. If the first time he went down by a stock was at a count of _3-3 or
-2-2_, Mew2King was *not* able to comeback and pull out the win.
+even stock. If the first time he went down by a stock was at a count of __3-3 or
+2-2__, Mew2King was *not* able to comeback and pull out the win.
 
 In both of those sets where he went down by a stock multiple times, his win
 percentage was 50%, so nothing indicative. As I collect more data, I'm curious
@@ -118,6 +118,8 @@ to find out whether or not that number will change.
 ### What's Next
 
 If you've made it this far.
+
+***
 
 [^1]: here, edgeguards are defined as times when the opponent is close enough to grab the stage edge, but the attacking player keeps or rolls up off the edge to keep the opponent from grabbing the edge in reach. Edgeguarding in this post does not refer to attacking moves used on the edge to damage and push the opponent away.
 
