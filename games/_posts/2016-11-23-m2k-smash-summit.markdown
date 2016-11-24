@@ -86,6 +86,7 @@ another one from an early rest from Hbox. The lowest percentage M2K died at was
 15 percent, when he got hit by a forward air from Jigglypuff near the bottom of
 Final Destination.
 
+
 #### Comebacks
 
 Next, let's look at how Mew2King performs when he goes down by a stock or more.
@@ -153,4 +154,4 @@ please send them my way so I can make that one even better.
 
 [^1]: here, edgeguards are defined as times when the opponent is close enough to grab the stage edge, but the attacking player keeps or rolls up off the edge to keep the opponent from grabbing the edge in reach. Edgeguarding in this post does not refer to attacking moves used on the edge to damage and push the opponent away.
 
-[^2]: first time as in blah
+[^2]: in some games, Mew2King went down by a stock before tying it, and then going down again multiple times. First time in this context refers to what is the stock-count when he *first* loses the lead.
