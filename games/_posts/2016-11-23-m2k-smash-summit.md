@@ -33,14 +33,22 @@ a total of 20 matches. He went 3-2 overall, and went 10-10 in his sets.
 Figure 1 below is a table that represents his individual character vs.
 character set records, as well as the average game time for each matchup.
 
+<figure>
+<div markdown="1">
+
 | character matchup        | win-loss record | avg time per game |
-|--------------------------|-----------------|-------------------|
+|--------------------------|----------------:|------------------:|
 | sheik vs. falco          |             1-1 |            3:59.5 |
 | marth vs. peach          |             1-3 |            5:56.5 |
 | sheik vs. captain falcon |             3-2 |            3:51.2 |
 | marth vs. falco          |             2-1 |              3:06 |
 | fox vs. jigglypuff       |             0-3 |          3:39.333 |
 | marth vs. fox            |             3-0 |          3:23.667 |
+
+</div>
+<figcaption><b>Figure 1:</b> character matchup records. M2K's character is on
+the left</figcaption>
+</figure>
 
 As you can see, M2K's best record is as Marth when playing against Fox, but
 this is also when he 3-0'd Leffen in Winner's Quarterfinal. Unfortunately
