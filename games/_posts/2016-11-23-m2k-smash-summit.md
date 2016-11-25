@@ -218,14 +218,14 @@ and maybe we can figure out a way to divide up the work to get stats more
 quickly and reliably!
 
 My background is in programming, so I've been analyzing these datasets using
-Python and csv's to manage most of it. I'm sure there are others that might
+Python and csv's for most of it. I'm sure there are others that might
 have some pretty neat ideas for how to manipulate the data, so building an API
 to make all of it available is definitely something on my mind as well. Of the
 stats I've covered here, all of these analyses are generalized and coded up so
 it shouldn't take long to publish more posts and reports.
 
-For my next in-depth post, I'll probably try to cover another player, maybe
-Mang0 at the next big tournament. If you have any more ideas or feedback,
+For my next in-depth post, I'll probably try to cover another player
+at the next big tournament. If you have any more ideas or feedback,
 please send them my way so I can make that one even better.
 
 ***
@@ -233,3 +233,5 @@ please send them my way so I can make that one even better.
 [^1]: here, edgeguards are defined as times when the opponent is close enough to grab the stage edge, but the attacking player keeps or rolls up off the edge to keep the opponent from grabbing the edge in reach. Edgeguarding in this post does not refer to attacking moves used on the edge to damage and push the opponent away.
 
 [^2]: in some games, Mew2King went down by a stock before tying it, and then going down again multiple times. First time in this context refers to what is the stock-count when he *first* loses the lead.
+
+[tafo]: http://t5dev.smash4tips.com/pages/index.cfm
