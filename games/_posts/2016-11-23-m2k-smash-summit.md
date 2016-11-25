@@ -54,7 +54,7 @@ As you can see, M2K's best record is as Marth when playing against Fox, but
 this is also when he 3-0'd Leffen in Winner's Quarterfinal. Unfortunately
 here, most of the win-loss records are representative of specific rounds in the
 tournament, versus single players. You can see the Marth-Peach matchup versus
-Armada, the Fox-Jigglypuff from Losers' Finals with Hbox, and the 5-set match
+Armada, the Fox-Jigglypuff from Losers' Finals with Hbox, and the 5-game set
 with S2J (Sheik-Captain Falcon). In time as I catalogue and annotate more
 tournaments, I hope to be able to show large collections of pro character
 matchups.
@@ -64,7 +64,7 @@ For the most part, the quick games make sense. Marth-Fox and Marth-Falco are
 both heavy damage hitters and can kill quickly. The sole long game with
 Marth-Peach also makes sense. Surprisingly, the Fox-Jigglypuff matchup was the
 third-fastest, coming in at 3:39.33. From what I've seen, Hbox's Jigglypuff
-matches sometimes take quite a while, but I'm attributing this to M2K pulling
+games sometimes take quite a while, but I'm attributing this to M2K pulling
 out Fox, a character he doesn't play as much.
 
 <figure>
@@ -152,8 +152,8 @@ Final Destination.
 
 Next, let's look at how Mew2King performs when he goes down by a stock or more.
 This was a little bit tougher to analyze and breakdown, simply because the
-stock count at any given time in a match is not a true indicator. Let's say
-a match starts 4-4, and one player kills the other, but not before her
+stock count at any given time in a game is not a true indicator. Let's say
+a game starts 4-4, and one player kills the other, but not before her
 character takes 85% damage. If you look only at the stock count, it would look
 like she has the lead but you miss out on all the work the second player did
 to bring her percent up to 85%. There are also other intangibles such as momentum
@@ -166,14 +166,14 @@ against his opponent.
 
 In this tournament, there were 11 total situations where M2K went down
 by 1 stock and his opponent had less than 50%. These 11 moments happened across
-7 total sets. In 2 sets, M2K went down 4-3, tied it, then went down 3-2,
-and tied it one more time at 2-2 before going down 2-1. Of these 7 matches, his
+7 total games. In 2 games, M2K went down 4-3, tied it, then went down 3-2,
+and tied it one more time at 2-2 before going down 2-1. Of these 7 games, his
 win percentage is __28.57%__, which is not too surprising. For those two times that
 he was able to pull off the win, the first time[^2] he went down by a stock was on the 4-4
 even stock. If the first time he went down by a stock was at a count of __3-3 or
 2-2__, Mew2King was *not* able to comeback and pull out the win.
 
-In both of those sets where he went down by a stock and tied multiple times, his win
+In both of those games where he went down by a stock and tied multiple times, his win
 percentage was 50%, so nothing indicative. As I collect more data, I'm curious
 to find out whether or not that number will change.
 
