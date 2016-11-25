@@ -28,8 +28,8 @@ further analysis.
 ### Overview
 
 Before we get into some of the smaller details, let's go through some of the
-high level stats from the tournament. In total, M2K played in 5 rounds, for
-a total of 20 matches. He went 3-2 overall, and went 10-10 in his sets.
+high level stats from the tournament. In total, M2K played in 5 sets, for
+a total of 20 games. He went 3-2 overall, and went 10-10 in his games.
 Figure 1 below is a table that represents his individual character vs.
 character set records, as well as the average game time for each matchup.
 
