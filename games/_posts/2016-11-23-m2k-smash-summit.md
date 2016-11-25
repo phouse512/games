@@ -47,7 +47,7 @@ character set records, as well as the average game time for each matchup.
 
 </div>
 <figcaption><b>Figure 1:</b> character matchup records. M2K's character is on
-the left</figcaption>
+the left.</figcaption>
 </figure>
 
 As you can see, M2K's best record is as Marth when playing against Fox, but
@@ -67,7 +67,38 @@ third-fastest, coming in at 3:39.33. From what I've seen, Hbox's Jigglypuff
 matches sometimes take quite a while, but I'm attributing this to M2K pulling
 out Fox, a character he doesn't play as much.
 
-[figure 2][basic kill analysis]
+<figure>
+<div markdown="1">
+
+| character | move          | % of kills | avg defender % | # of edge guards |
+|-----------|---------------|-----------:|---------------:|-----------------:|
+| marth     | forward smash | 23.5294    | 140.125        | 0                |
+|           | forward air   | 20.5882    | 108.571        | 4                |
+|           | down air      | 8.8235     | 125            | 0                |
+|           | up b          | 8.8235     | 110            | 0                |
+|           | down smash    | 5.8824     | 145            | 0                |
+|           | down tilt     | 5.8824     | 158            | 0                |
+|           | forward tilt  | 5.8824     | 114            | 0                |
+|           | up throw      | 5.8824     | 211.5          | 0                |
+|           | b special     | 2.9412     | 159            | 0                |
+|           | back air      | 2.9412     | 177            | 0                |
+|           | neutral air   | 2.9412     | 202            | 0                |
+|           | n/a           | 2.9412     | 36             | 0                |
+|           | up air        | 2.9412     | 164            | 0                |
+|           |               |            |                |                  |
+| sheik     | back air      | 45.8333    | 116.091        | 0                |
+|           | forward air   | 29.1667    | 128            | 0                |
+|           | neutral air   | 16.6667    | 113.5          | 1                |
+|           | down smash    | 8.3333     | 106            | 0                |
+|           |               |            |                |                  |
+| fox       | up smash      | 50         | 101            | 0                |
+|           | back air      | 25         | 139.5          | 0                |
+|           | up air        | 25         | 82             | 0                |
+
+</div>
+<figcaption><b>Figure 2:</b> Mew2King's kill move breakdown by
+character.</figcaption>
+</figure>
 
 Figure 2 is a breakdown of all of M2K's kills throughout the tournament,
 grouped by each character. Mew2King uses a variety of methods to kill his
@@ -95,6 +126,22 @@ here is not too specific, the player getting killed must have less than
 50 percent damage at the time of death. In total, M2K's Marth got 3 gimps in
 the tournament, 2 of them with his forward airs, and one with a forward tilt.
 Surprisingly here, none of them came from down air punishes.
+
+<figure>
+<div markdown="1">
+
+| gimp kills  | marth - forward air      | 2 |
+|-------------|--------------------------|---|
+|             | marth - forward tilt     | 1 |
+|             |                          |   |
+| gimp deaths | fox - down b             | 1 |
+|             | jigglypuff - down b      | 1 |
+|             | jigglypuff - forward air | 1 |
+
+</div>
+<figcaption><b>Figure 3:</b> A breakdown of gimp kills and deaths at Smash
+Summit 3 for M2K.</figcaption>
+</figure>
 
 He got gimped 3 times as well, one of them coming from a shine spike and
 another one from an early rest from Hbox. The lowest percentage M2K died at was
