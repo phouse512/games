@@ -131,7 +131,6 @@ Surprisingly here, none of them came from down air punishes.
 <div markdown="1">
 
 | gimp kills  | marth - forward air      | 2 |
-|-------------|--------------------------|---|
 |             | marth - forward tilt     | 1 |
 |             |                          |   |
 | gimp deaths | fox - down b             | 1 |
@@ -161,20 +160,20 @@ to bring her percent up to 85%. There are also other intangibles such as momentu
 that can't be tracked with the statistics I've gathered. 
 
 For the purpose of this analysis, we'll look at occurrences when the stock
-count goes to 4-3, 3-2, 2-1 and the other player has less than 50%. This
+count goes to 4-3, 3-2, 2-1 and the attacking player has less than 50%. This
 analysis also does not include the inverse, when Mew2King goes up by a stock
 against his opponent.
 
 In this tournament, there were 11 total situations where M2K went down
 by 1 stock and his opponent had less than 50%. These 11 moments happened across
-7 total sets, so in 2 sets, M2K went down 4-3, tied it, then went down 3-2,
+7 total sets. In 2 sets, M2K went down 4-3, tied it, then went down 3-2,
 and tied it one more time at 2-2 before going down 2-1. Of these 7 matches, his
 win percentage is __28.57%__, which is not too surprising. For those two times that
 he was able to pull off the win, the first time[^2] he went down by a stock was on the 4-4
 even stock. If the first time he went down by a stock was at a count of __3-3 or
 2-2__, Mew2King was *not* able to comeback and pull out the win.
 
-In both of those sets where he went down by a stock multiple times, his win
+In both of those sets where he went down by a stock and tied multiple times, his win
 percentage was 50%, so nothing indicative. As I collect more data, I'm curious
 to find out whether or not that number will change.
 
@@ -186,7 +185,24 @@ stats such as these. In the long term, I hope to establish some benchmarks on
 the average damage dealt per character per minute, but for now there's not much
 else to do with this data.
 
-[dpm chart]
+<figure>
+<div markdown="1">
+
+| player    | character      | damage per minute | minutes played |
+|-----------|----------------|------------------:|---------------:|
+| armada    | peach          | 94.1233           | 23:46          |
+| hungrybox | jigglypuff     | 106.048           | 10:58          |
+| leffen    | fox            | 112.243           | 10:11          |
+| m2k       | fox            | 94.9237           | 10:58          |
+|           | marth          | 114.451           | 43:15          |
+|           | sheik          | 112.22            | 27:15          |
+| mang0     | falco          | 126.307           | 17:17          |
+| s2j       | captain falcon | 91.2974           | 19:16          |
+
+</div>
+<figcaption><b>Figure 4:</b> DPM breakdowns per player and per each character
+played.</figcaption>
+</figure>
 
 ### What's Next
 

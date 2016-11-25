@@ -63,6 +63,16 @@ class GameAnalyzer:
                 dmg_per_min = Decimal(damage_dealt[key][char_key]['count']) / match_time_minutes
                 damage_dealt[key][char_key]['dpm'] = dmg_per_min
 
+                time_avg_minutes = floor(float(damage_dealt[key][char_key]['match_time']) / 60)  # type: float
+                time_avg_seconds = damage_dealt[key][char_key]['match_time'] % 60  # type: Decimal
+
+                if time_avg_seconds < 10:
+                    time_avg_seconds_string = "0" + str(time_avg_seconds)  # type: str
+                else:
+                    time_avg_seconds_string = str(time_avg_seconds)
+
+                damage_dealt[key][char_key]['match_time'] = "%s:%s" % (time_avg_minutes, time_avg_seconds_string)
+
         return damage_dealt
 
 
